@@ -110,7 +110,7 @@ export function HeroSection() {
       </nav>
 
       {/* Main Content with Flip Animation */}
-      <div className="relative z-10 px-6" style={{ paddingTop: 'calc(8rem - 75px)', paddingBottom: '10rem' }}>
+      <div className="relative z-10 px-6" style={{ paddingTop: 'calc(8rem - 75px)', paddingBottom: '2rem' }}>
         <div className="max-w-7xl mx-auto">
           <AnimatePresence mode="wait">
             {!showAbout ? (
@@ -136,7 +136,7 @@ export function HeroSection() {
                   style={{ fontFamily: 'Instrument Serif, serif' }}
                 >
                   Full Stack Developer<br />
-                  <span className="italic text-gray-600">crafting robust applications.</span>
+                  <span className="italic text-gray-600">climbing toward better code.</span>
                 </motion.h1>
 
                 {/* Description */}
@@ -147,7 +147,7 @@ export function HeroSection() {
                   className="text-sm sm:text-base text-gray-900 max-w-xl mt-6 leading-relaxed cursor-pointer font-semibold"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 >
-                  From database to deployment, I build solutions that work.
+                  Step by step, I build reliable systems. From foundation to finish, I create solutions that work.
                 </motion.p>
 
                 {/* Tap to flip hint */}
@@ -332,7 +332,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mt-48 flex flex-col items-center gap-3"
+          className="mt-16 flex flex-col items-center gap-3"
         >
           <span className="text-xs tracking-[0.2em] uppercase text-[#6F6F6F]" style={{ fontFamily: 'Inter, sans-serif' }}>Scroll</span>
           <motion.div
