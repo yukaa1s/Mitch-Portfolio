@@ -4,16 +4,16 @@ import { motion } from 'motion/react';
 const projects = [
   {
     title: "OMS System",
-    category: "Order Management",
-    description: "High-performance order management system processing 10K+ orders daily with real-time analytics.",
+    category: "Office Management System",
+    description: "B2B SaaS platform built to handle the complexities of modern business operations. Beyond a simple CRUD app, the OMS features a Multi-tenant Architecture that ensures strict data isolation while serving diverse industries through a unified codebase.",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
     link: "https://oms-demo.vercel.app",
     techStack: ["React", "Node.js", "PostgreSQL"]
   },
   {
     title: "FundWise",
-    category: "FinTech",
-    description: "AI-powered investment platform with portfolio tracking and risk analysis.",
+    category: "Finance Tracker",
+    description: "A comprehensive financial management application with intelligent nutritionist features for holistic personal wellness. Built with modern web technologies to deliver real-time expense tracking, budget management, savings goals, and AI-powered meal recommendations.",
     imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
     link: "https://fundwise.vercel.app",
     techStack: ["Next.js", "TypeScript", "TensorFlow"]
