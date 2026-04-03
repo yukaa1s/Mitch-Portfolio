@@ -91,11 +91,47 @@ export function HeroSection() {
 
           {/* Menu Items */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-sm text-gray-900 font-semibold transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>Home</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold" style={{ fontFamily: 'Inter, sans-serif' }}>Project</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold" style={{ fontFamily: 'Inter, sans-serif' }}>About</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold" style={{ fontFamily: 'Inter, sans-serif' }}>Certificate</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold" style={{ fontFamily: 'Inter, sans-serif' }}>Reach Me</a>
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-sm text-gray-900 font-semibold transition-colors hover:text-gray-600 cursor-pointer" 
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Home
+            </button>
+            <button 
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold cursor-pointer" 
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Project
+            </button>
+            <button 
+              onClick={() => {
+                setShowAbout(true);
+                setTimeout(() => {
+                  const aboutSection = document.querySelector('[key="about"]');
+                  aboutSection?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold cursor-pointer" 
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              About
+            </button>
+            <button 
+              onClick={() => document.getElementById('certificates')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold cursor-pointer" 
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Certificate
+            </button>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-semibold cursor-pointer" 
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Reach Me
+            </button>
           </div>
 
           {/* CTA Button */}
@@ -265,23 +301,25 @@ export function HeroSection() {
                       {/* Photo Frame */}
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-4 border-gray-200 shadow-2xl bg-gray-100">
                         <ImageWithFallback
-                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80"
+                          src="/Pics/abou.jpg"
                           alt="Mitch Yvone Ortega"
                           className="w-full h-full object-cover"
                         />
                       </div>
 
                       {/* Download CV Button */}
-                      <motion.button
+                      <motion.a
+                        href="/Ortega%20-%20CV%20Resume%20(1).pdf"
+                        download
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
-                        className="mt-8 w-full flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-800 hover:scale-[1.02] transition-all shadow-lg"
+                        className="mt-8 w-full flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-800 hover:scale-[1.02] transition-all shadow-lg cursor-pointer"
                         style={{ fontFamily: 'Inter, sans-serif' }}
                       >
                         <Download className="w-5 h-5" />
                         Download CV
-                      </motion.button>
+                      </motion.a>
 
                       {/* Social/Contact Quick Links */}
                       <motion.div

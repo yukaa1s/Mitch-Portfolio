@@ -4,27 +4,27 @@ import { motion } from 'motion/react';
 const projects = [
   {
     title: "OMS System",
-    category: "Office Management System",
-    description: "B2B SaaS platform built to handle the complexities of modern business operations. Beyond a simple CRUD app, the OMS features a Multi-tenant Architecture that ensures strict data isolation while serving diverse industries through a unified codebase.",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    link: "https://oms-demo.vercel.app",
+    category: "Multi-Tenant Office Management System",
+    description: "B2B SaaS platform with Multi-tenant Architecture ensuring strict data isolation while serving diverse industries through a unified codebase. Built to handle complex business operations beyond simple CRUD.",
+    imageUrl: "/Pics/Projects/Oms System.png",
+    link: "https://oms-system-multi-tenant-office-mana.vercel.app",
     techStack: ["React", "Node.js", "PostgreSQL"]
   },
   {
     title: "FundWise",
     category: "Finance Tracker",
-    description: "A comprehensive financial management application with intelligent nutritionist features for holistic personal wellness. Built with modern web technologies to deliver real-time expense tracking, budget management, savings goals, and AI-powered meal recommendations.",
-    imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop",
-    link: "https://fundwise.vercel.app",
-    techStack: ["Next.js", "TypeScript", "TensorFlow"]
+    description: "Financial management app with real-time expense tracking, budget management, and AI-powered insights. Features intelligent analytics for holistic personal wellness and savings goals.",
+    imageUrl: "/Pics/Projects/FundWise.png",
+    link: "https://fund-wise-finance-tracker.vercel.app",
+    techStack: ["Next.js", "TypeScript", "AI", "TensorFlow"]
   },
   {
-    title: "ERP Suite",
-    category: "Business Management",
-    description: "Enterprise resource planning with automated workflows and inventory management.",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-    link: "https://erp-suite.vercel.app",
-    techStack: ["React", "GraphQL", "MongoDB"]
+    title: "Nexus Brain",
+    category: "RAG Knowledge Base",
+    description: "AI-powered knowledge management with document upload, semantic search, and intelligent chat capabilities. Enables efficient information retrieval and contextual conversations.",
+    imageUrl: "/Pics/Projects/Nexus Brain.png",
+    link: "https://nexus-brain-lake.vercel.app/auth",
+    techStack: ["Next.js", "TypeScript", "AI/ML", "Vector DB"]
   }
 ];
 
